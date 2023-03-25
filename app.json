@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-ready-app",
-    "slug": "expo-ready-app",
+    "name": "react-native-animated",
+    "slug": "react-native-animated",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "plugins": ["@react-native-voice/voice"],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -23,8 +22,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "permissions": ["android.permission.RECORD_AUDIO"]
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

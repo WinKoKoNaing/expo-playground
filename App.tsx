@@ -6,6 +6,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useCallback, useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { HomeScreen } from './screens';
+import { BoxScreen } from './screens/Reanimated';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -38,11 +39,19 @@ export default function App() {
   }
 
   const RootStack = createNativeStackNavigator();
+  const ReanimatedStack = createNativeStackNavigator();
+
+  const ReanimatedNavigator = () => (
+    <ReanimatedStack.Navigator screenOptions={{ headerShown: false }}>
+      <ReanimatedStack.Screen name="Box" component={BoxScreen} />
+    </ReanimatedStack.Navigator>
+  );
 
   return (
     <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
       <NavigationContainer>
         <RootStack.Navigator>
+          <RootStack.Screen name="Reanimated" component={ReanimatedNavigator} />
           <RootStack.Screen name="Home" component={HomeScreen} />
         </RootStack.Navigator>
       </NavigationContainer>
