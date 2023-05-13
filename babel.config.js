@@ -6,7 +6,7 @@ module.exports = function (api) {
       [
         'module-resolver',
         {
-          root: ['./src'],
+          root: ['.'],
           extensions: [
             '.js',
             '.jsx',
@@ -21,6 +21,7 @@ module.exports = function (api) {
       ],
       '@babel/plugin-proposal-export-namespace-from',
       'react-native-reanimated/plugin',
+      require.resolve('expo-router/babel'),
     ],
   };
 };
