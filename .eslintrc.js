@@ -1,3 +1,7 @@
 module.exports = {
-  extends: 'universe',
+  root: true,
+  extends: ['universe/native'],
+  globals: {
+    __dirname: true,
+  },
 };

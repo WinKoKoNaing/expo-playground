@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { ViewStyle } from 'react-native';
+import React, { useEffect } from "react";
+import { ViewStyle } from "react-native";
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -7,7 +7,7 @@ import Animated, {
   withRepeat,
   withSequence,
   withTiming,
-} from 'react-native-reanimated';
+} from "react-native-reanimated";
 
 type Props = {
   style?: ViewStyle;
@@ -34,7 +34,11 @@ export default function Skeleton({ style }: Props) {
 
   return (
     <Animated.View
-      style={[animatedStyles, { width: '100%', height: 20, backgroundColor: 'gainsboro' }, style]}
+      style={[
+        animatedStyles,
+        { width: "100%", height: 20, backgroundColor: "gainsboro" },
+        style,
+      ]}
     />
   );
 }
