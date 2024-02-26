@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native-ui",
-    "slug": "react-native-ui",
-    "scheme": "react-native-ui",
+    "name": "expo-playground",
+    "slug": "expo-playground",
+    "scheme": "expo-playground",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
